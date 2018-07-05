@@ -5,9 +5,59 @@
 	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>Annuaire avec Local Storage</title>
+	<!--Création d'une maquette (essai avec Pencil), utilisation de bootstrap, stockage des données en localStorage-->
 </head>
 <body>
+	<h1>Annuaire local</h1>
+	<div id="affichage_tab">
+		<span><input type="text" name="search" placeholder="Rechercher un contact"></span><span><button id="del">Supprimer</button></span><span><button id="modify">Modifier</button></span>
 
+		<!-- Button trigger modal -->
+		<button id="add" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Ajouter un contact</button>
+
+		<!-- Modal -->
+		<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLongTitle">Ajout de contact</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<h6><strong>Merci de renseigner les informations du nouveau contact</strong></h6>
+						<p>Genre : <select name="Genre">
+							<option>F</option>
+							<option>M</option>
+						</select></p>
+						<input id="name" type="text" name="name" placeholder="Nom" class="ajout_contact">
+						<input id="surname" type="text" name="surname" placeholder="Prénom" class="ajout_contact">
+						<input id="birth" type="text" name="birth" placeholder="Age" class="ajout_contact">
+						<input id="city" type="text" name="city" placeholder="Ville" class="ajout_contact">
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+						<button id="enregistrer" type="button" class="btn btn-primary">Enregistrer</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<table class="table" id="annuaire">
+			<thead class="thead-dark">
+				<tr>
+					<th>Genre</th>
+					<th>Nom</th>
+					<th>Prénom</th>
+					<th>Age</th>
+					<th>Ville</th>
+				</tr>
+			</thead>
+			<tbody id="body"></tbody>
+		</table>
+	</div>
 
 	<script src="/home/adeline/node_modules/jquery/dist/jquery.min.js"></script>
 	<script src="bootstrap.bundle.min.js"></script>	

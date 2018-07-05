@@ -1,0 +1,42 @@
+h1
+{
+	text-align: center;
+	margin: auto;
+}
+#affichage_tab
+{
+	width: 1000px;
+	margin-top: 100px;
+	margin-left: 200px;
+}
+#annuaire
+{
+	width: 1000px;
+	max-height: 500px;
+	margin-top: 5px;
+}
+input
+{
+	width: 780px;
+	height: 50px;
+}
+button
+{
+	float: right;
+	height: 50px;
+}
+#modify
+{
+	margin-right: 15px;
+	width: 94px;
+}
+.ajout_contact
+{
+	width: 400px;
+}
+h6
+{
+	margin-bottom: 10px;
+}
+/*Popup*/
+
