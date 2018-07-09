@@ -1,13 +1,24 @@
+body
+{
+	font-family: 'Muli', sans-serif;
+	background-image: url('annuaire.jpg');
+	background-size: cover;
+}
 h1
 {
+	font-size: 50px;
 	text-align: center;
 	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	
 }
 #affichage_tab
 {
 	width: 1000px;
-	margin-top: 100px;
+	margin-top: 190px;
 	margin-left: 200px;
+	margin: auto;
 }
 #annuaire
 {
@@ -17,7 +28,7 @@ h1
 }
 input
 {
-	width: 780px;
+	width: 730px;
 	height: 50px;
 }
 button
@@ -38,5 +49,17 @@ h6
 {
 	margin-bottom: 10px;
 }
-/*Popup*/
-
+tbody
+{
+	background-color: rgba(255, 255, 255, 0.8);
+}
+#modify, #del
+{
+	width: 55px;
+	margin-right:30px;
+}
+td, th
+{
+	text-align: center;
+	width: 142px;
+}
